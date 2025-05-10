@@ -29,7 +29,7 @@
         exit("<h3>Erro ao executar a query</h3>");
     }
 
-    echo "<h2> Clientes Cadastrados </h2>";
+    echo "<h2> Clientes Cadastrados Atualmente </h2>";
 
     while($cliente = mysqli_fetch_assoc($resultado)){
         echo "ID: " . $cliente['id'] . "<br>";
