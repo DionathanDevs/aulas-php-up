@@ -73,7 +73,6 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-
 .botao-voltar:hover{
  background-color: rgba(137, 43, 226, 0.76);
   color: rgb(255, 238, 238);
