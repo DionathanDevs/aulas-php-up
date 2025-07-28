@@ -15,11 +15,11 @@
     <div class="box-form">
     <form action="estoque.php" method="post">
         <label for="title">Título</label>
-        <input type="text" id="title" name="title" placeholder= "Digite o Título do Livro">
+        <input type="text" id="title" name="title" placeholder= "Digite o Título do Livro" required>
         <label for="autor">Autor</label>
-        <input placeholder= "Digite o Autor" type="text" id="autor" name="autor">
+        <input placeholder= "Digite o Autor" type="text" id="autor" name="autor" required>
         <label for="price">Preço Unitário</label>
-        <input placeholder= "Digite o preço" type="number" id="price" name="price">
+        <input placeholder= "Digite o preço" type="number" id="price" name="price" step="0.01">
         <label for="quant">Quantidade em Estoque</label>
         <input  placeholder= "Digite a quantidade de estoque" type="number" id="quant" name="quant">
         <button type="submit">Enviar</button>

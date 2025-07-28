@@ -29,18 +29,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             echo "Titulo: " . $livro[0]['title'] . '<br>';
             echo "Autor: " . $livro[0]['autor']. '<br>';
             echo "Preço: " . $livro[0]['price']. '<br>';
-            echo "Quanidade: " . $livro[0]['quant']. '<br>';
+            echo "Quantidade: " . $livro[0]['quant']. '<br>';
             echo "Valor total em estoque R$" . number_format($valorTotal, 2, ',', '.');
             echo '</div>';
         
         }else{
-            echo '<p>Os campos não são válidos, por favor verificar se foram preenchidos da forma correta, com Nome, Autor, Preço maior que 0.01 e quantidade maior que 0.</p><br>';
+            echo '<div class="box-resultado"><p>Os campos não são válidos, por favor verificar se foram preenchidos da forma correta, com Nome, Autor, Preço maior que 0.01 e quantidade maior que 0.</p><br>';
             echo '
-            <a href="index.php">Voltar para página principal</a>
+            <a class="botao-voltar" href="index.php">Voltar para página principal</a>
             ';
+            echo '</div>';
         }
 }else{
-    echo '<a href="index.php">Voltar para página principal</a>
+    echo '<a class="botao-voltar" href="index.php">Voltar para página principal</a>
     ';
 }
 
